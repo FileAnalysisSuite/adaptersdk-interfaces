@@ -15,7 +15,6 @@
  */
 package io.github.fileanalysissuite.adaptersdk.interfaces.framework;
 
-import java.util.Optional;
 import javax.annotation.Nonnull;
 
 /**
@@ -27,33 +26,14 @@ import javax.annotation.Nonnull;
 public interface RepositoryProperties
 {
     /**
-     * Returns whether the content hash should be generated.
-     * <p>
-     * <b>Note:</b> This setting is currently not used.
-     *
-     * @return whether the content hash should be generated
-     */
-    boolean getGenerateContentHash();
-
-    /**
-     * Returns whether the metadata hash should be generated.
-     * <p>
-     * <b>Note:</b> This setting is currently not used.
-     *
-     * @return whether the metadata hash should be generated
-     */
-    boolean getGenerateMetadataHash();
-
-    /**
      * Used to retrieve the specified configuration option.
      * <p>
      * Configuration options are retrieved from Adapter Configuration values provided during adding of the custom adapter.
      *
-     * @param optionKey the key of the option to be retrieved
-     * @return the value of the option, or {@link Optional#empty()} if the option has not been set.
+     * @return the {@link OptionsProvider} for the configuration options
      */
     @Nonnull
-    Optional<String> getConfigurationOption(String optionKey);
+    OptionsProvider getConfigurationOptions();
 
     /**
      * Used to retrieve the specified repository option.
@@ -61,9 +41,8 @@ public interface RepositoryProperties
      * Repository options are the values provided when a repository was created. These are options you set up when creating a custom
      * adapter on the Repository Options screen.
      *
-     * @param optionKey the key of the option to be retrieved
-     * @return the value of the option, or {@link Optional#empty()} if the option has not been set.
+     * @return the {@link OptionsProvider} for the repository options
      */
     @Nonnull
-    Optional<String> getRepositoryOption(String optionKey);
+    OptionsProvider getRepositoryOptions();
 }

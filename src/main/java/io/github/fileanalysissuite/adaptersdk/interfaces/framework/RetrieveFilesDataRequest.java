@@ -26,7 +26,6 @@ import javax.annotation.Nonnull;
  */
 public interface RetrieveFilesDataRequest extends HandlerRequest
 {
-
     /**
      * Returns the list of items to retrieve.
      *

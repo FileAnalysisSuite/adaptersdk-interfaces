@@ -26,12 +26,6 @@ import javax.annotation.Nonnull;
  */
 public interface RetrieveFilesDataRequest extends HandlerRequest
 {
-    /**
-     * Returns a value indicating whether the binary contents should be retrieved.
-     *
-     * @return a value indicating whether the binary contents should be retrieved
-     */
-    boolean getRetrieveContents();
 
     /**
      * Returns the list of items to retrieve.

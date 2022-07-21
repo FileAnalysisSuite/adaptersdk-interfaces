@@ -15,7 +15,6 @@
  */
 package io.github.fileanalysissuite.adaptersdk.interfaces.framework;
 
-import java.util.Optional;
 import javax.annotation.Nonnull;
 
 /**
@@ -31,7 +30,7 @@ public interface RepositoryProperties
      * <p>
      * Configuration options are retrieved from Adapter Configuration values provided during adding of the custom adapter.
      *
-     * @return the OptionsProvider for configuration options.
+     * @return the {@link OptionsProvider} for the configuration options
      */
     @Nonnull
     OptionsProvider getConfigurationOptions();
@@ -42,7 +41,7 @@ public interface RepositoryProperties
      * Repository options are the values provided when a repository was created. These are options you set up when creating a custom
      * adapter on the Repository Options screen.
      *
-     * @return the OptionsProvider for repository options.
+     * @return the {@link OptionsProvider} for the repository options
      */
     @Nonnull
     OptionsProvider getRepositoryOptions();

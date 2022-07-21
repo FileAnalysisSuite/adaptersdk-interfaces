@@ -16,21 +16,24 @@
 package io.github.fileanalysissuite.adaptersdk.interfaces.framework;
 
 import java.util.Optional;
+import javax.annotation.Nonnull;
 
-public interface OptionsProvider {
-
+public interface OptionsProvider
+{
     /**
-     * Retrieves available option names.
-     * @return the option names.
+     * Retrieves the available option names.
+     *
+     * @return the available option names
      */
+    @Nonnull
     Iterable<String> getOptionNames();
 
     /**
-     * Retrieves a value of an option.
-     * <p>
-     * If the option does not exist, <c>null</c> will be returned.
-     * @param optionName the option name.
-     * @return the value of an option
+     * Used to retrieve the specified option.
+     *
+     * @param optionName the name of the option to be retrieved
+     * @return the value of the option, or {@link Optional#empty()} if the option has not been set
      */
+    @Nonnull
     Optional<String> getOption(String optionName);
 }

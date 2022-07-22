@@ -72,6 +72,7 @@
     <properties>
         <copyrightYear>2022</copyrightYear>
         <copyrightNotice>Copyright ${copyrightYear} Micro Focus or one of its affiliates.</copyrightNotice>
+        <enforceBannedDependencies>true</enforceBannedDependencies>
         <enforceCorrectDependencies>true</enforceCorrectDependencies>
     </properties>
 

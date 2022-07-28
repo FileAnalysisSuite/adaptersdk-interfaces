@@ -15,6 +15,7 @@
  */
 package io.github.fileanalysissuite.adaptersdk.interfaces.extensibility;
 
+import io.github.fileanalysissuite.adaptersdk.interfaces.framework.CancellationToken;
 import io.github.fileanalysissuite.adaptersdk.interfaces.framework.FileDataResultsHandler;
 import io.github.fileanalysissuite.adaptersdk.interfaces.framework.FileListResultsHandler;
 import io.github.fileanalysissuite.adaptersdk.interfaces.framework.RetrieveFileListRequest;

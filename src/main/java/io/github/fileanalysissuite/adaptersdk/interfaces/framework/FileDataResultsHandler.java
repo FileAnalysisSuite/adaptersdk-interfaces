@@ -15,7 +15,6 @@
  */
 package io.github.fileanalysissuite.adaptersdk.interfaces.framework;
 
-import io.github.fileanalysissuite.adaptersdk.interfaces.extensibility.CancellationToken;
 import io.github.fileanalysissuite.adaptersdk.interfaces.extensibility.FileContents;
 import io.github.fileanalysissuite.adaptersdk.interfaces.extensibility.ItemMetadata;
 

@@ -15,19 +15,15 @@
  */
 package io.github.fileanalysissuite.adaptersdk.interfaces.framework;
 
-import io.github.fileanalysissuite.adaptersdk.interfaces.extensibility.CancellationToken;
-
 /**
- * Adapter processing engine responsible for the handling and execution of the repository tasks.
+ * Propagates notification that operations should be canceled.
  */
-public interface ProcessingEngine
+public interface CancellationToken
 {
     /**
-     * Executes the engine.
-     * <p>
-     * This call will block the execution until {@code cancellationToken} is canceled or a critical error happens.
+     * Returns whether cancellation has been requested for this token.
      *
-     * @param cancellationToken the cancellation token that can be used by other objects or threads to receive notice of cancellation
+     * @return whether cancellation has been requested for this token
      */
-    void execute(CancellationToken cancellationToken);
+    boolean isCancellationRequested();
 }

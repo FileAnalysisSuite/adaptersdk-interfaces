@@ -15,8 +15,8 @@
  */
 package io.github.fileanalysissuite.adaptersdk.interfaces.framework;
 
-import io.github.fileanalysissuite.adaptersdk.interfaces.extensibility.FileContents;
 import io.github.fileanalysissuite.adaptersdk.interfaces.extensibility.ItemMetadata;
+import io.github.fileanalysissuite.adaptersdk.interfaces.extensibility.OpenStreamFunction;
 
 /**
  * Provides methods to queue the file data retrieval results.
@@ -33,5 +33,5 @@ public interface FileDataResultsHandler extends FailureRegistration
      * @param metadata the metadata
      * @param cancellationToken the cancellation token
      */
-    void queueItem(String itemId, FileContents fileContents, ItemMetadata metadata, CancellationToken cancellationToken);
+    void queueItem(String itemId, OpenStreamFunction fileContents, ItemMetadata metadata, CancellationToken cancellationToken);
 }

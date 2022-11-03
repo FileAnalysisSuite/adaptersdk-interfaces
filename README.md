@@ -28,7 +28,7 @@ These interfaces are implemented by internal Java SDK classes.  Custom adapters 
 This project uses [semantic versioning](https://semver.org/) from the perspective of the adapter developer.
 
 #### Major Version Increments
-The major version is incremented when there are breaking changes made from the custom adapter developer's perspective.  That is, if there are changes made that would necessaite changes to custom adapter code.
+The major version is incremented when there are breaking changes made from the custom adapter developer's perspective.  That is, if there are changes made that would necessitate changes to custom adapter code.
 
 For example, if a new non-default method was added to one of the interfaces in the `extensibility` package then that method would have to be implemented by adapter developers when they move to the new version.  Such a change would elicit a major version increment.
 

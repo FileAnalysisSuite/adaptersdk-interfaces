@@ -87,26 +87,6 @@ public interface ItemMetadata
     Integer getVersion();
 
     /**
-     * Returns the binary file content hash.
-     *
-     * @return the binary file content hash
-     */
-    default String getContentHash()
-    {
-        return null;
-    }
-
-    /**
-     * Returns the file metadata hash.
-     *
-     * @return the file metadata hash
-     */
-    default String getMetadataHash()
-    {
-        return null;
-    }
-
-    /**
      * Returns the additional metadata.
      * <p>
      * Important metadata to attach to an item that is not covered by other properties.

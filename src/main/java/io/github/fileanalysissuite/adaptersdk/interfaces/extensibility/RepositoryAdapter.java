@@ -41,7 +41,7 @@ public interface RepositoryAdapter
     AdapterDescriptor createDescriptor();
 
     /**
-     * Retrieves a list of files (or repository items) including basic metadata like title and timestamps.
+     * Retrieves a list of files including basic metadata like title and timestamps.
      *
      * @param request the request
      * @param handler the handler

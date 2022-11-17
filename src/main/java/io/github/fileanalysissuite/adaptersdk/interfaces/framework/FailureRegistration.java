@@ -23,15 +23,15 @@ import io.github.fileanalysissuite.adaptersdk.interfaces.extensibility.FailureDe
 public interface FailureRegistration
 {
     /**
-     * Registers a failure for a specific item or a repository location.
+     * Registers a failure for a specific file or a repository location.
      *
-     * @param itemLocation the full location or identifier of an item in the repository
+     * @param fileLocation the full location or identifier of an file in the repository
      * @param failureDetails the failure details
      */
-    void registerFailure(String itemLocation, FailureDetails failureDetails);
+    void registerFailure(String fileLocation, FailureDetails failureDetails);
 
     /**
-     * Registers a failure not related to a specific item or location.
+     * Registers a failure not related to a specific file or location.
      *
      * @param failureDetails the failure details
      */

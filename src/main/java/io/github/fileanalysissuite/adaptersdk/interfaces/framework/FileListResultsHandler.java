@@ -15,27 +15,27 @@
  */
 package io.github.fileanalysissuite.adaptersdk.interfaces.framework;
 
-import io.github.fileanalysissuite.adaptersdk.interfaces.extensibility.ItemMetadata;
+import io.github.fileanalysissuite.adaptersdk.interfaces.extensibility.FileMetadata;
 
 /**
  * Results handler for the file list retrieval operation.
  * <p>
- * This results handler allows queueing of repository items discovered during scan. Usually just quick and cheap to obtain metadata would
- * be queued for an item and no content. The second request to obtain file data, should query for specified items and provide contents or
+ * This results handler allows queueing of repository files discovered during scan. Usually just quick and cheap to obtain metadata would
+ * be queued for an file and no content. The second request to obtain file data, should query for specified files and provide contents or
  * potentially more expensive to obtain metadata properties.
  */
 public interface FileListResultsHandler extends FailureRegistration
 {
     /**
-     * Queues a repository item discovered during scan operation.
+     * Queues a repository file discovered during scan operation.
      * <p>
      * The {@code partitionHint} parameter should be an identifier of the repository partition during distributed processing. For example,
      * in a scenario where network file system is scanned, a folder name could be the partition hint because performance could potentially
      * be improved if the folders are on different drives.
      *
-     * @param itemMetadata repository item properties
+     * @param fileMetadata repository file properties
      * @param partitionHint partitioning information for distributed processing
      * @param cancellationToken the token that can be used to check if cancellation is requested
      */
-    void queueItem(ItemMetadata itemMetadata, String partitionHint, CancellationToken cancellationToken);
+    void queueFile(FileMetadata fileMetadata, String partitionHint, CancellationToken cancellationToken);
 }

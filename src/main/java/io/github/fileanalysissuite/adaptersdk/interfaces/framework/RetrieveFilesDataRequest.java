@@ -27,10 +27,10 @@ import javax.annotation.Nonnull;
 public interface RetrieveFilesDataRequest extends HandlerRequest
 {
     /**
-     * Returns the list of items to retrieve.
+     * Returns the list of files to retrieve.
      *
-     * @return the list of items to retrieve
+     * @return the list of files to retrieve
      */
     @Nonnull
-    Iterable<RepositoryItem> getItems();
+    Iterable<RepositoryFile> getFiles();
 }

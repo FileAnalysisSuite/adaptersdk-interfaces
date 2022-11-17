@@ -22,7 +22,7 @@ import javax.annotation.Nonnull;
  * Provides information required to run RetrieveFileList command.
  * <p>
  * File list retrieval is a part of the process of scanning repository. When the adapter receives a request to retrieve a file list, it
- * should return all items in particular repository (for repositories without changelog) or items that were changed since the last request
+ * should return all files in particular repository (for repositories without changelog) or files that were changed since the last request
  * (for repositories with changelog).
  */
 public interface RetrieveFileListRequest extends HandlerRequest

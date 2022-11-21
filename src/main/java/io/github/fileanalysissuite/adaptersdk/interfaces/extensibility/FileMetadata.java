@@ -21,11 +21,11 @@ import java.util.Map;
 import javax.annotation.Nonnull;
 
 /**
- * Item metadata.
+ * File metadata.
  * <p>
- * Represents a repository item metadata.
+ * Represents a repository file metadata.
  */
-public interface ItemMetadata
+public interface FileMetadata
 {
     /**
      * Returns the file location - the full path or the repository identifier.
@@ -33,7 +33,7 @@ public interface ItemMetadata
      * @return the file location
      */
     @Nonnull
-    String getItemLocation();
+    String getFileLocation();
 
     /**
      * Returns the file name.
@@ -89,7 +89,7 @@ public interface ItemMetadata
     /**
      * Returns the additional metadata.
      * <p>
-     * Important metadata to attach to an item that is not covered by other properties.
+     * Important metadata to attach to a file that is not covered by other properties.
      *
      * @return the additional metadata
      */

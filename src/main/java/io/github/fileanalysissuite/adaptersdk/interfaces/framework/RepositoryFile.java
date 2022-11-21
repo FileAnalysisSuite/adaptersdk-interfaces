@@ -15,29 +15,29 @@
  */
 package io.github.fileanalysissuite.adaptersdk.interfaces.framework;
 
-import io.github.fileanalysissuite.adaptersdk.interfaces.extensibility.ItemMetadata;
+import io.github.fileanalysissuite.adaptersdk.interfaces.extensibility.FileMetadata;
 import javax.annotation.Nonnull;
 
 /**
- * An item in a repository.
+ * A file in a repository.
  * <p>
- * Represents metadata and optional content information about a repository item.
+ * Represents metadata and optional content information about a repository file.
  */
-public interface RepositoryItem
+public interface RepositoryFile
 {
     /**
-     * Returns the item identifier.
+     * Returns the file identifier.
      *
-     * @return the item identifier
+     * @return the file identifier
      */
     @Nonnull
-    String getItemId();
+    String getFileId();
 
     /**
-     * Returns the repository-level metadata associated with the item.
+     * Returns the repository-level metadata associated with the file.
      *
      * @return the metadata
      */
     @Nonnull
-    ItemMetadata getMetadata();
+    FileMetadata getMetadata();
 }

@@ -55,7 +55,7 @@ public interface FileMetadata
      *
      * @return the file size
      */
-    long getSize();
+    Long getSize();
 
     /**
      * Returns the file created date time.

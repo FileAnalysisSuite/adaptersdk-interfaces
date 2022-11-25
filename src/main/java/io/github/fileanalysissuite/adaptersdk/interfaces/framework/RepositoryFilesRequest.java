@@ -24,7 +24,7 @@ import javax.annotation.Nonnull;
  * File data retrieval is a part of the process of scanning repository. When the adapter receives that RetrieveFilesData command
  * ({@link RepositoryAdapter#retrieveFilesData} method), it should queue the binary contents and expensive metadata.
  */
-public interface RetrieveFilesDataRequest extends HandlerRequest
+public interface RepositoryFilesRequest extends HandlerRequest
 {
     /**
      * Returns the list of files to retrieve.

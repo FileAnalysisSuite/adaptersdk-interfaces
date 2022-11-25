@@ -19,7 +19,7 @@ import io.github.fileanalysissuite.adaptersdk.interfaces.framework.CancellationT
 import io.github.fileanalysissuite.adaptersdk.interfaces.framework.FileDataResultsHandler;
 import io.github.fileanalysissuite.adaptersdk.interfaces.framework.FileListResultsHandler;
 import io.github.fileanalysissuite.adaptersdk.interfaces.framework.RetrieveFileListRequest;
-import io.github.fileanalysissuite.adaptersdk.interfaces.framework.RetrieveFilesDataRequest;
+import io.github.fileanalysissuite.adaptersdk.interfaces.framework.RepositoryFilesRequest;
 import javax.annotation.Nonnull;
 
 /**
@@ -56,5 +56,5 @@ public interface RepositoryAdapter
      * @param handler the handler
      * @param cancellationToken the cancellation token that can be used by other objects or threads to receive notice of cancellation
      */
-    void retrieveFilesData(RetrieveFilesDataRequest request, FileDataResultsHandler handler, CancellationToken cancellationToken);
+    void retrieveFilesData(RepositoryFilesRequest request, FileDataResultsHandler handler, CancellationToken cancellationToken);
 }

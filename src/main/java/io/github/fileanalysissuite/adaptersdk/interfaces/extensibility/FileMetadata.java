@@ -51,13 +51,6 @@ public interface FileMetadata
     String getTitle();
 
     /**
-     * Returns the file size.
-     *
-     * @return the file size
-     */
-    Long getSize();
-
-    /**
      * Returns the file created date time.
      *
      * @return the file created date time

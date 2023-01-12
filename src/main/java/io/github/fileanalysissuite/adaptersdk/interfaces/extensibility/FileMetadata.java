@@ -15,7 +15,6 @@
  */
 package io.github.fileanalysissuite.adaptersdk.interfaces.extensibility;
 
-import java.io.Serializable;
 import java.time.Instant;
 import java.util.Map;
 import javax.annotation.Nonnull;
@@ -86,7 +85,7 @@ public interface FileMetadata
      *
      * @return the additional metadata
      */
-    default Map<String, Serializable> getAdditionalMetadata()
+    default Map<String, ? extends Iterable<String>> getAdditionalMetadata()
     {
         return null;
     }

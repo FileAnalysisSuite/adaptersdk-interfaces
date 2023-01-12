@@ -85,7 +85,7 @@ public interface FileMetadata
      *
      * @return the additional metadata
      */
-    default Map<String, Iterable<String>> getAdditionalMetadata()
+    default Map<String, ? extends Iterable<String>> getAdditionalMetadata()
     {
         return null;
     }

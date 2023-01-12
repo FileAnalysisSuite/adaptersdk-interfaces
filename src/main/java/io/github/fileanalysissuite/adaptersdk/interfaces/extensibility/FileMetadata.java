@@ -15,7 +15,6 @@
  */
 package io.github.fileanalysissuite.adaptersdk.interfaces.extensibility;
 
-import java.io.Serializable;
 import java.time.Instant;
 import java.util.Map;
 import javax.annotation.Nonnull;

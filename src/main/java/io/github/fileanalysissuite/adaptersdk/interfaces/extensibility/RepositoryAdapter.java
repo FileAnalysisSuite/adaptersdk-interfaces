@@ -36,7 +36,6 @@ public interface RepositoryAdapter
      * The {@link AdapterDescriptor} contains the adapter type name and expected configuration properties.
      *
      * @return the descriptor object which contains information about the adapter
-     *
      * @throws InterruptedException if any thread has interrupted the current thread
      */
     @Nonnull
@@ -48,11 +47,10 @@ public interface RepositoryAdapter
      * @param request the request
      * @param handler the handler
      * @param cancellationToken the token that can be used by other objects or threads to receive notice of cancellation
-     *
      * @throws InterruptedException if any thread has interrupted the current thread
      */
     void retrieveFileList(RetrieveFileListRequest request, FileListResultsHandler handler, CancellationToken cancellationToken)
-            throws InterruptedException;
+        throws InterruptedException;
 
     /**
      * Retrieves the content and expensive metadata for the files provided in the request.
@@ -60,9 +58,8 @@ public interface RepositoryAdapter
      * @param request the request
      * @param handler the handler
      * @param cancellationToken the cancellation token that can be used by other objects or threads to receive notice of cancellation
-     *
      * @throws InterruptedException if any thread has interrupted the current thread
      */
     void retrieveFilesData(RepositoryFilesRequest request, FileDataResultsHandler handler, CancellationToken cancellationToken)
-            throws InterruptedException;
+        throws InterruptedException;
 }

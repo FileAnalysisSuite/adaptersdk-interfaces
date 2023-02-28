@@ -18,6 +18,8 @@ package io.github.fileanalysissuite.adaptersdk.interfaces.framework;
 import io.github.fileanalysissuite.adaptersdk.interfaces.extensibility.FileMetadata;
 import io.github.fileanalysissuite.adaptersdk.interfaces.extensibility.OpenStreamFunction;
 
+import java.time.Duration;
+
 /**
  * Provides methods to queue the file data retrieval results.
  * <p>
@@ -34,4 +36,13 @@ public interface FileDataResultsHandler extends FailureRegistration
      * @param cancellationToken the cancellation token
      */
     void queueFile(String fileId, OpenStreamFunction fileContents, FileMetadata metadata, CancellationToken cancellationToken);
+
+    /**
+     * Requests that the file data retrieval operation be retried after the specified time.
+     *
+     * @param fileId the file identifier
+     * @param retryAfter the duration to pass before the operation is retried
+     * @param cancellationToken the cancellation token
+     */
+    void retryAfter(String fileId, Duration retryAfter, CancellationToken cancellationToken);
 }

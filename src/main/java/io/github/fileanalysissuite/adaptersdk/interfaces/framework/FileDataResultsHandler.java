@@ -43,8 +43,5 @@ public interface FileDataResultsHandler extends FailureRegistration
      * @param delay the length of time to delay
      * @param cancellationToken the cancellation token
      */
-    default void retryAfter(String fileId, Duration delay, CancellationToken cancellationToken)
-    {
-        throw new UnsupportedOperationException("Not implemented yet - please wait for US627237 to be completed.");
-    }
+    void retryAfter(String fileId, Duration delay, CancellationToken cancellationToken);
 }

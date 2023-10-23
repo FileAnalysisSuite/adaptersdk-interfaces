@@ -15,9 +15,9 @@
  */
 package io.github.fileanalysissuite.adaptersdk.interfaces.extensibility;
 
+import jakarta.annotation.Nonnull;
 import java.time.Instant;
 import java.util.Map;
-import javax.annotation.Nonnull;
 
 /**
  * File metadata.

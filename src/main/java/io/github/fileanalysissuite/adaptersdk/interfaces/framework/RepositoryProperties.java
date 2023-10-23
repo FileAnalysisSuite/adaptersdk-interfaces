@@ -15,7 +15,7 @@
  */
 package io.github.fileanalysissuite.adaptersdk.interfaces.framework;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 
 /**
  * Represents repository information passed from FAS.

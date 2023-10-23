@@ -15,8 +15,8 @@
  */
 package io.github.fileanalysissuite.adaptersdk.interfaces.framework;
 
+import jakarta.annotation.Nonnull;
 import java.util.Optional;
-import javax.annotation.Nonnull;
 
 public interface OptionsProvider
 {

@@ -15,7 +15,7 @@
  */
 package io.github.fileanalysissuite.adaptersdk.interfaces.framework;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 
 /**
  * This is the base object of the request types. All request interfaces derive from this interface. Any functionality added here is

@@ -20,7 +20,7 @@ import io.github.fileanalysissuite.adaptersdk.interfaces.framework.FileDataResul
 import io.github.fileanalysissuite.adaptersdk.interfaces.framework.FileListResultsHandler;
 import io.github.fileanalysissuite.adaptersdk.interfaces.framework.RetrieveFileListRequest;
 import io.github.fileanalysissuite.adaptersdk.interfaces.framework.RepositoryFilesRequest;
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 
 /**
  * This is the main interface that must be implemented by a custom adapter.

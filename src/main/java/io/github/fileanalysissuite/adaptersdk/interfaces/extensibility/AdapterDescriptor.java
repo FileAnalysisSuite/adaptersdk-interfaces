@@ -15,7 +15,7 @@
  */
 package io.github.fileanalysissuite.adaptersdk.interfaces.extensibility;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 
 /**
  * The Adapter configuration.

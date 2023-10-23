@@ -16,7 +16,7 @@
 package io.github.fileanalysissuite.adaptersdk.interfaces.framework;
 
 import io.github.fileanalysissuite.adaptersdk.interfaces.extensibility.RepositoryAdapter;
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 
 /**
  * Provides information required to run the RetrieveFilesData command.

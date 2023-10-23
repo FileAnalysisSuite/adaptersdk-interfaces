@@ -15,9 +15,9 @@
  */
 package io.github.fileanalysissuite.adaptersdk.interfaces.extensibility;
 
+import jakarta.annotation.Nonnull;
 import java.io.IOException;
 import java.io.InputStream;
-import javax.annotation.Nonnull;
 
 /**
  * Represents a function that opens an input stream.

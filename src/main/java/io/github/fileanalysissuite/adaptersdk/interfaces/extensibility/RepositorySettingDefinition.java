@@ -16,7 +16,7 @@
 package io.github.fileanalysissuite.adaptersdk.interfaces.extensibility;
 
 import io.github.fileanalysissuite.adaptersdk.interfaces.framework.TypeCode;
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 
 /**
  * Definition of a repository setting in FAS Custom Adapter.
